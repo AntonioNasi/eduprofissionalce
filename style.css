@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    border-top: solid 1px transparent;
+    height: 320px;
+    background-image: url(https://h6m2m2k5.stackpathcdn.com/wp-content/uploads/2021/06/191107_INAUG-ESC-PAULINO-ROCHA_TS6920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes move {
+    0%{background-position: 0% 100%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 100%;}
+}
+
+header .header2{
+    background: linear-gradient(20deg, rgba(12, 221, 57, 0.692) 50%, rgba(124, 86, 69, 0.651) 50%);
+    background-size: 140% 140%;
+    animation-name: move;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+header .header2 h1, p{
+    color: white;
+    text-align: center;
+}
+
+header .header2 h1{
+    margin-top: 100px;
+    text-shadow: 2px 2px 5px black;
+}
+
+@media screen and (max-width: 414px){
+    header .header2 h1{
+        padding: 15px;
+        margin-top: 60px;
+        font-size: 25px;
+    }
+}
+
+.div-menu nav{
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px){
+    .div-menu nav{
+        max-width: 430px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .div-menu nav{
+        max-width: 290px;
+    }
+}
+
+.div-menu nav ul li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    color:  white;
+    margin: 10px;
+    background-color: rgba(12, 221, 57, 1);
+    height: 30px;
+    width: 120px;
+}
+
+.div-menu nav ul li:hover{
+    background-color: rgba(124, 86, 69, 1);
+}
+
+.div-sobre{
+    max-width: 1024px;
+    margin: 40px auto;
+}
+
+@media screen and (max-width: 414px){
+    .div-sobre{
+        padding: 15px;
+    }
+}
+
+.div-sobre h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 414px){
+    .div-sobre h1{
+        font-size: 25px;
+    }
+}
+
+.div-sobre h2{
+    background-color: rgba(12, 221, 57, 1);
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 414px){
+    .div-sobre h2{
+        font-size: 20px;
+    }
+}
+
+.div-sobre p{
+    color: black;
+    margin-bottom: 20px;
+    text-align: left;
+    column-count: 2;
+    column-gap: 35px;
+}
+
+@media screen and (max-width: 414px){
+    .div-sobre p{
+        column-count: 1;
+    }
+}
+
+footer{
+    height: 100px;
+    background-color: rgba(12, 221, 57, 1);
+    border-top: solid 1px transparent;
+}
+
+footer #autor{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+footer #dev{
+    color: black;
+}
+
+@media screen and (max-width: 414px){
+    footer #dev{
+        font-size: 15px;
+        padding: 0px 15px;
+    }
+}
